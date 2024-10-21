@@ -11,6 +11,7 @@ let myMap = L.map('map');
 
 // provide map values
 myMap.setView( schoolCoord, myZoom );
+L.control.locate().addTo(myMap);
 
 // get map title provider - OpenStreetMap
 
@@ -75,6 +76,8 @@ let myPoly = L.polygon(
 
 myPoly.addTo(myMap);
 myPoly.bindPopup('Where I hike and ride motorcycles with friends')
+
+
 
 // // data array holding all the artictecure questions
 // // Questions and answers generated with the help of ChatGPT
